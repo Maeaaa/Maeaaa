@@ -116,7 +116,7 @@ with st.sidebar:
         clear_cache()
         st.success("캐시를 비웠습니다. (업로드 파일 삭제)")
 
-st.subheader("1) 학년별 엑셀 파일 업로드 (여러 개 가능, 업로드 후 유지)")
+st.subheader("1) 학년별 엑셀 파일 업로드")
 grade_files = st.file_uploader("1학년.xlsx, 2학년.xlsx … 업로드", type=["xlsx"], accept_multiple_files=True)
 if grade_files:
     saved = []
