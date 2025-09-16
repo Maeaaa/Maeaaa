@@ -16,8 +16,8 @@ if pw != PASSWORD:
 
 st.success("인증 성공! 학회비 조회를 시작할 수 있습니다.")
 
-st.set_page_config(page_title="학회비 일괄 조회", layout="wide")
-st.title("학회비 납부 일괄 조회 (학년/반 규칙 + 이름 표시)")
+st.set_page_config(page_title="학회비 납부자 일괄 조회", layout="wide")
+st.title("학회비 납부자 일괄 조회")
 
 @dataclass
 class Hit:
