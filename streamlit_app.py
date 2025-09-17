@@ -7,7 +7,7 @@ import streamlit as st
 from openpyxl import load_workbook
 
 # --- 비밀번호 보호 ---
-PASSWORD = "너울14"  # 필요 시 여기서 변경 가능
+PASSWORD = "sjdnf14"  # 필요 시 여기서 변경 가능
 st.title("🔒 비밀번호 보호됨")
 pw = st.text_input("비밀번호를 입력하세요", type="password")
 if pw != PASSWORD:
