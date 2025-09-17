@@ -17,7 +17,7 @@ if pw != PASSWORD:
 st.success("인증 성공! 학회비 조회를 시작할 수 있습니다.")
 # --- 비밀번호 삭제 시 이 부분까지 삭제 ---
 
-st.set_page_config(page_title="학회비 일괄자 조회", layout="wide")
+st.set_page_config(page_title="학회비 납부자 조회", layout="wide")
 st.title("학회비 납부자 일괄 조회")
 
 # -------- Persistent upload cache (disk) --------
