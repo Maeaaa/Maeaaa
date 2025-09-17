@@ -6,6 +6,17 @@ import pandas as pd
 import streamlit as st
 from openpyxl import load_workbook
 
+# --- 비밀번호 보호 ---
+PASSWORD = "sjdnf14"  # 필요 시 여기서 변경 가능
+st.title("🔒 비밀번호 보호됨")
+pw = st.text_input("비밀번호를 입력하세요", type="password")
+if pw != PASSWORD:
+    st.warning("올바른 비밀번호를 입력해야 계속할 수 있습니다.")
+    st.stop()
+
+st.success("인증 성공! 학회비 조회를 시작할 수 있습니다.")
+# --- 비밀번호 삭제 시 이 부분까지 삭제 ---
+
 st.set_page_config(page_title="학회비 납부자 조회", layout="wide")
 st.title("학회비 납부자 일괄 조회")
 
