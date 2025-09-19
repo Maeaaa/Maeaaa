@@ -7,7 +7,7 @@ import streamlit as st
 from openpyxl import load_workbook
 
 st.set_page_config(page_title="학회비 납부자 조회", layout="wide")
-st.title("학회비 납부자 일괄 조회")
+st.title("학회비 납부자 조회")
 
 # -------- Persistent upload cache (disk) --------
 UPLOAD_DIR = os.path.join(tempfile.gettempdir(), "dues_cache")
